@@ -5,8 +5,13 @@
 // }
 
 var React = require('react'),
-	ReactDOM = require('react-dom'),
-	routes = require('./config/routes');
+	ReactDOM = require('react-dom');
+var routes = require('./config/routes');
+
+ReactDOM.render(
+	routes,
+	document.getElementById('app')	
+);
 
 // var ProfilePic = React.createClass({
 // 	render: function () {
@@ -66,8 +71,3 @@ var React = require('react'),
 // 	<Avatar user={USER_DATA} />,
 // 	document.getElementById('app')	
 // );
-
-ReactDOM.render(
-	routes,
-	document.getElementById('app')	
-);
